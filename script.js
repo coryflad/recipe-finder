@@ -3,10 +3,10 @@
 /*const searchUrl = 'https://api.edamam.com/search'
 const searchEsp = 'https://test-es.edamam.com/search'
 const appKey = 
-'fd967e623643b511adeedd8cb6db33ec'	
-const appId = '8b12ba8f'
-/* https://api.edamam.com/search?q=gochujang&q=rice&app_id=8b12ba8f&app_key=
-fd967e623643b511adeedd8cb6db33ec */
+'6b8cfdaccb097ac92ce06472d5d3e2c5'	
+const appId = 'f9a8889a'
+/* https://api.edamam.com/search?q=gochujang&q=rice&app_id=f9a8889a&app_key=
+6b8cfdaccb097ac92ce06472d5d3e2c5 */
 
 $(document).ready(function(){
   console.log("Waiting for user input!");
@@ -29,7 +29,7 @@ function buttons(){
 }
 
 function findRecipes(q){
-  fetch('https://api.edamam.com/search?q=' + q + '&app_id=8b12ba8f&app_key=fd967e623643b511adeedd8cb6db33ec')
+  fetch('https://api.edamam.com/search?q=' + q + '&app_id=f9a8889a&app_key=6b8cfdaccb097ac92ce06472d5d3e2c5')
    .then(response => response.json())
    .then(responseJson => {
     displayRecipes(responseJson)
